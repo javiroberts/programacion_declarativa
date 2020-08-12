@@ -1,0 +1,18 @@
+cabal-version:       >=1.10
+
+name:                programacion-declarativa
+version:             1.0.0.0
+license-file:        LICENSE.md
+author:              Javier Roberts
+maintainer:          javier@wilab.io
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+executable programacion-declarativa
+  main-is:             Main.hs
+  other-modules:       Markdown,
+                       InlineParsers,
+                       BlockParsers
+  build-depends:       base >=4.14 && <4.15,
+                       open-browser ==0.2.1.0
+  default-language:    Haskell2010
